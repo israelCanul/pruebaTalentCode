@@ -1,0 +1,48 @@
+@import "variables";
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  margin: 0px 5px;
+  padding: 5px 5px 10px;
+  box-sizing: border-box;
+
+  .img {
+    img {
+      width: 100%;
+      max-width: 90%;
+      margin: 5px auto;
+    }
+  }
+  .description {
+    p {
+      padding: 5px 0px 0px;
+      margin: 0px 0px 5px;
+
+      //   background: blue;
+    }
+  }
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  .action {
+    a {
+      text-decoration: none;
+      line-height: 40px;
+      background-color: $rosaSite;
+      color: white;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+  }
+}
