@@ -1,0 +1,17 @@
+$desktop: 1200px; //tamano maximo para escritorio
+$tablet: 767px; //tamano minimo para tablet
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}

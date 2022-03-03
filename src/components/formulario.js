@@ -3,7 +3,11 @@ import { useForm } from "react-hook-form";
 
 import "../scss/formulario.scss";
 
-const Contacto = ({ producto = null, toggleModal = () => {} }) => {
+const Contacto = ({
+  producto = null,
+  toggleModal = () => {},
+  triggerForm = () => {},
+}) => {
   const {
     register,
     handleSubmit,
@@ -16,7 +20,10 @@ const Contacto = ({ producto = null, toggleModal = () => {} }) => {
     }
   }, [producto]);
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    triggerForm(data);
+  };
 
   return (
     <div className="contacto">

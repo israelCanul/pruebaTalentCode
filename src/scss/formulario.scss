@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 .modalOpened {
   .contacto {
     height: 100vh;
@@ -40,6 +41,12 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
+    @include mobile {
+      width: 90vw;
+      height: auto;
+      min-height: 60vh;
+    }
 
     .material-icons.cerrar {
       cursor: pointer;

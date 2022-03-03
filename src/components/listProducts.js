@@ -11,7 +11,6 @@ const ListProducts = ({Selector, items = []})=>{
             return true;
         });
     }
-
     return <div className="list-products">
         <ul>
             {renderItems()}
